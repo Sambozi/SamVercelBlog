@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sam | Engineering & Computer Science</title>
+<meta name="description" content="Portfolio of Sam, engineering and computer science student. Mechanical systems, embedded software, and security.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚙️</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=Figtree:wght@400;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <nav aria-label="Main">
+    <strong>Sam</strong>
+    <div class="links"><a href="#about">About</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a></div>
+  </nav>
+
+  <header class="hero">
+    <div>
+      <h1>Hi, I'm Sam.</h1>
+      <p class="lede">Engineering student who writes code. I like things that move, things that compute, and the places where the two meet: <span class="hl">mechanical systems, embedded software, and security.</span></p>
+      <div class="btns">
+        <a class="btn primary" href="#projects">See my projects</a>
+        <a class="btn" href="#contact">Get in touch</a>
+      </div>
+    </div>
+    <div class="toy">
+      <svg id="spring" viewBox="0 0 300 340" role="img" aria-label="A draggable mass on a spring. Drag it down and let go to watch it oscillate.">
+        <rect x="60" y="10" width="180" height="14" rx="7" fill="var(--ink)"/>
+        <path id="coil" fill="none" stroke="var(--pink)" stroke-width="6" stroke-linecap="round" stroke-linejoin="round"/>
+        <g id="mass">
+          <rect x="85" y="0" width="130" height="64" rx="16" fill="var(--cobalt)" stroke="var(--ink)" stroke-width="3"/>
+          <text x="150" y="40" text-anchor="middle" font-family="Bricolage Grotesque,sans-serif" font-weight="800" font-size="26" fill="#fff">m = Sam</text>
+        </g>
+      </svg>
+      <small>Drag me down and let go. It's a damped spring.</small>
+    </div>
+  </header>
+
+  <section id="about" aria-labelledby="about-h">
+    <h2 id="about-h">About me</h2>
+    <div class="about">
+      <div>
+        <p>I'm a university student studying engineering with a strong second focus in computer science. My coursework runs from thermodynamics and structural vibration to data structures, algorithms, and cybersecurity.</p>
+        <p>I learn best by taking things apart and asking why they work, so my projects tend to start with a question and end with something I can measure, run, or hold.</p>
+        <p><em>Edit me: add a sentence about what you're aiming for next, like a co-op, internship, or area you want to work in.</em></p>
+      </div>
+      <ul class="facts">
+        <li><b>Studying:</b> Engineering &amp; Computer Science</li>
+        <li><b>Into:</b> Embedded systems, vibration analysis, security</li>
+        <li><b>Currently:</b> Programming microcontrollers in C/C++</li>
+        <li><b>Looking for:</b> Edit me (internships, co-op, collaborations)</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" aria-labelledby="proj-h">
+    <h2 id="proj-h">Things I've built</h2>
+    <div class="projects">
+      <article class="card wide">
+        <div class="thumb empty" role="img" aria-label="Placeholder for a project image">Swap me for an image</div>
+        <h3><a href="projects/project-one.html">Project name goes here</a></h3>
+        <p>Two sentences: what problem you tackled, and what you made. Lead with the result, like "Cut settling time by 30%" or "Reads sensor data over I2C and logs it live."</p>
+        <a class="more" href="projects/project-one.html">Read the full story</a>
+        <ul class="tags"><li>C/C++</li><li>STM32</li><li>Embedded</li></ul>
+      </article>
+      <article class="card">
+        <div class="thumb empty" role="img" aria-label="Placeholder for a project image">Image here</div>
+        <h3><a href="projects/project-one.html">Project two</a></h3>
+        <p>What it does, in plain words.</p>
+        <ul class="tags"><li>Python</li><li>Graphs</li></ul>
+      </article>
+      <article class="card">
+        <h3>Project three</h3>
+        <p>What it does, in plain words.</p>
+        <ul class="tags"><li>MATLAB</li><li>Vibration</li></ul>
+      </article>
+      <article class="card wide">
+        <h3>Project four</h3>
+        <p>Group projects count too. Say what your part was.</p>
+        <a class="more" href="#">Read the report</a>
+        <ul class="tags"><li>Teamwork</li><li>Systems design</li></ul>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" aria-labelledby="skills-h">
+    <h2 id="skills-h">Tools I reach for</h2>
+    <div class="skills">
+      <span>C / C++</span><span>Python</span><span>Data structures &amp; algorithms</span><span>STM32 / microcontrollers</span>
+      <span>Thermodynamics</span><span>Structural dynamics</span><span>Network security</span><span>CAD</span><span>MATLAB</span><span>Git</span>
+    </div>
+  </section>
+
+  <section id="contact" class="contact" aria-labelledby="contact-h">
+    <h2 id="contact-h">Let's build something.</h2>
+    <p>Hiring, collaborating, or just curious? Say hi.</p>
+    <a class="btn" href="mailto:you@example.com">Email me</a>
+    <a class="btn" href="https://www.linkedin.com/in/your-handle" rel="noopener">LinkedIn</a>
+    <a class="btn" href="https://github.com/your-handle" rel="noopener">GitHub</a>
+  </section>
+  <footer>© <span id="yr"></span> Sam. Built by hand.</footer>
+</div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+(function(){
+  var svg=document.getElementById('spring'),coil=document.getElementById('coil'),mass=document.getElementById('mass');
+  var rest=200,y=rest,v=0,drag=false,k=60,c=3.2,last=performance.now();
+  var reduce=matchMedia('(prefers-reduced-motion: reduce)').matches;
+  function draw(){
+    var top=24,n=12,d='M150 '+top;
+    var len=y-top,step=len/(n+1);
+    for(var i=1;i<=n;i++){d+=' L'+(i%2?118:182)+' '+(top+step*i)}
+    d+=' L150 '+y;
+    coil.setAttribute('d',d);
+    mass.setAttribute('transform','translate(0,'+y+')');
+  }
+  function ptY(e){var p=svg.createSVGPoint();p.x=e.clientX;p.y=e.clientY;return p.matrixTransform(svg.getScreenCTM().inverse()).y}
+  svg.addEventListener('pointerdown',function(e){drag=true;svg.setPointerCapture(e.pointerId);v=0});
+  svg.addEventListener('pointermove',function(e){if(drag){y=Math.max(90,Math.min(270,ptY(e)-32))}});
+  svg.addEventListener('pointerup',function(){drag=false});
+  function tick(t){
+    var dt=Math.min((t-last)/1000,.03);last=t;
+    if(!drag){var a=-k*(y-rest)-c*v;v+=a*dt*1;y+=v*dt*1;if(reduce){y=rest;v=0}}
+    draw();requestAnimationFrame(tick);
+  }
+  y=reduce?rest:130;draw();requestAnimationFrame(tick);
+})();
+</script>
+</body>
+</html>
